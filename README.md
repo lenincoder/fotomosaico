@@ -38,7 +38,7 @@ classDiagram
       +fusion()
     }
 ```
-***Pri_imagen:*** es la clase que se encarga de procesar la imagen de fondo o la imagen principal, de esta imagen se necesita obtener sus dimensiones para crear las subdivisiones donde se colocaran las imagenes selfies. La cantidad de selfies a colocar para crear el mosaico lo determinara el usuario.
+***Pri_imagen:*** es la clase que se encarga de procesar la imagen de fondo o la imagen principal, de esta imagen se necesita obtener sus dimensiones para crear las subdivisiones donde se colocaran las imagenes selfies. La cantidad de selfies a colocar para crear el mosaico lo determinara el usuario.  
 ***Selfie_imagen:*** es la clase que se encarga de procesar las imagenes selfies, estas imagenes estaran alojadas en una carpeta, la cantidad de imagenes alojadas sera determinada por el usuario. La clase detectará la cantidad de imagenes existentes y las necesarias para crear el mosaico y tambien cambiará el tamaño de la imagen para ocupar cada cuadricula del mosaico.
 ***Crear_Mosaico:*** en esta clase es donde se sucede la magia, une todas las imagenes de selfies tomando encuenta las dimensiones de la imagen principal y la cantidad que se va a colocar en la dirección X e Y. Para una mejor vizualización del resultado final se ha colocado dos funciones que ayudan con la transparencia y el contraste de la imagen. Finalmente se unen las dos imagenes colocando la imagen de fondo o la imagen principal en la parte de atrás y la imagen creada a partir de las selfies en la parte de enfrente. Como resultado se tiene una nueva imagen que puede ser guardada para su posterior uso.
 ***
